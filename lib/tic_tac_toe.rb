@@ -67,7 +67,7 @@ def turn
       move(index, current_player)
   else
     puts "invalid"
-    @board.turn(index)
+    turn
   end
 end
 
