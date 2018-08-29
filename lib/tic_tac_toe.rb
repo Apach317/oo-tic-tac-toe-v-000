@@ -35,7 +35,11 @@ def position(location)
 end
 
 def position_taken?(location)
-  position(location) != " "
+  if position(location) == " "
+  return false
+elsif position(location) == "X" || "O" || position(location).nil?
+  return true
+end
 end
 
 def valid_move?(location)
