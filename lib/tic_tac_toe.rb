@@ -60,7 +60,7 @@ end
 
 def turn
   puts "Please enter 1-9:"
-  gets.strip.to_i - 1
+  input = 
   index = input_to_index(input)
   display_board
    if valid_move?(input)
