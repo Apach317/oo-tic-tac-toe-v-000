@@ -44,10 +44,10 @@ end
 
 def valid_move?(location)
   if position(location) == " "
-  return false
-elsif position(location) == "X" || "O" || position(location).nil?
-  return true
-end
+    return true
+  elsif position(location) == "X" || "O" || position(location).nil?
+    return false
+  end
 end
 
 def current_player
