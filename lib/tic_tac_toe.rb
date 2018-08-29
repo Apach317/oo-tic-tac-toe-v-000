@@ -43,11 +43,7 @@ end
 end
 
 def valid_move?(location)
-  if position(location) == " "
-    return true
-  elsif position(location) == "X" || "O" || position(location).nil?
-    return false
-  end
+  position(location) == " " && location.between?(0,8)
 end
 
 def current_player
