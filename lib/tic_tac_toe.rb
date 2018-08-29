@@ -60,7 +60,7 @@ end
 
 def turn
   puts "Please enter 1-9:"
-  input = input_to_index(input)
+  input = input_to_index
   index = input_to_index(input)
   display_board
    if valid_move?(input)
