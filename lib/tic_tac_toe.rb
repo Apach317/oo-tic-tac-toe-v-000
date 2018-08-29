@@ -60,14 +60,13 @@ end
 
 def turn
   puts "Please enter 1-9:"
-  input = value
-  index = input_to_index(input)
+  input_to_index(input)
   display_board
    if valid_move?(input)
       move(input, current_player)
   else
     puts "invalid"
-    @board.turn(input)
+    @board.turn
   end
 end
 
