@@ -63,11 +63,11 @@ def turn
   input = gets.strip
   index = input_to_index(input)
   display_board
-   if valid_move?(input)
+   if valid_move?(index)
       move(input, current_player)
   else
     puts "invalid"
-    @board.turn(input)
+    @board.turn(index)
   end
 end
 
